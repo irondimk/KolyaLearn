@@ -6,79 +6,100 @@ export type TTypographyItem = {
 };
 
 export type TTypography = {
-    regular10: TTypographyItem;
-    regular12: TTypographyItem;
-    medium12: TTypographyItem;
-    regular14: TTypographyItem;
-    medium14: TTypographyItem;
-    bold14: TTypographyItem;
-    subheading: TTypographyItem;
-    subheading2: TTypographyItem;
-    title: TTypographyItem;
-    bigTitle: TTypographyItem;
-    headline: TTypographyItem;
-    medium34: TTypographyItem;
-    medium54: TTypographyItem;
+    dTextXs: TTypographyItem;
+    dTextS: TTypographyItem;
+    dTextM: TTypographyItem;
+    dTextL: TTypographyItem;
+    dTextXL: TTypographyItem;
+
+    dTextBoldXs: TTypographyItem;
+    dTextBoldS: TTypographyItem;
+    dTextBoldM: TTypographyItem;
+    dTextBoldL: TTypographyItem;
+    dTextBoldXL: TTypographyItem;
+
+    dHeaderXs: TTypographyItem;
+    dHeaderS: TTypographyItem;
+    dHeaderM: TTypographyItem;
+    dHeaderL: TTypographyItem;
+    dHeaderXL: TTypographyItem;
 };
 
 const typography: TTypography = {
-    regular10: {
-        fontSize: 10,
-        lineHeight: 12,
-    },
-    regular12: {
+    // desktop
+
+    // text
+    dTextXs: {
         fontSize: 12,
-        lineHeight: 14,
+        lineHeight: 18,
     },
-    medium12: {
-        fontSize: 12,
-        lineHeight: 14,
-        fontWeight: 500,
-    },
-    regular14: {
-        fontSize: 14,
-        lineHeight: 16,
-    },
-    medium14: {
-        fontSize: 14,
-        lineHeight: 16,
-        fontWeight: 500,
-    },
-    bold14: {
-        fontSize: 14,
-        lineHeight: 16,
-        fontWeight: 600,
-    },
-    subheading: {
+    dTextS: {
         fontSize: 16,
-        lineHeight: 19,
+        lineHeight: 24,
     },
-    subheading2: {
-        fontSize: 16,
-        lineHeight: 19,
-        fontWeight: 500,
-    },
-    title: {
+    dTextM: {
         fontSize: 18,
-        lineHeight: 21,
+        lineHeight: 27,
     },
-    bigTitle: {
-        fontSize: 20,
-        lineHeight: 23,
-    },
-    headline: {
+    dTextL: {
         fontSize: 24,
-        lineHeight: 28,
+        lineHeight: 36,
     },
-    medium34: {
-        fontWeight: 500,
-        fontSize: 34,
-        lineHeight: 42,
+    dTextXL: {
+        fontSize: 36,
+        lineHeight: 54,
     },
-    medium54: {
-        fontWeight: 500,
-        fontSize: 52,
-        lineHeight: 62,
+    // bold
+    dTextBoldXs: {
+        fontSize: 12,
+        lineHeight: 18,
+        fontWeight: 700,
+    },
+    dTextBoldS: {
+        fontSize: 16,
+        lineHeight: 24,
+        fontWeight: 700,
+    },
+    dTextBoldM: {
+        fontSize: 18,
+        lineHeight: 27,
+        fontWeight: 700,
+    },
+    dTextBoldL: {
+        fontSize: 24,
+        lineHeight: 36,
+        fontWeight: 700,
+    },
+    dTextBoldXL: {
+        fontSize: 36,
+        lineHeight: 54,
+        fontWeight: 700,
+    },
+    // header
+    dHeaderXs: {
+        fontSize: 18,
+        lineHeight: 27,
+        fontWeight: 700,
+    },
+    dHeaderS: {
+        fontSize: 24,
+        lineHeight: 36,
+        fontWeight: 700,
+    },
+    dHeaderM: {
+        fontSize: 36,
+        lineHeight: 54,
+        fontWeight: 700,
+    },
+    dHeaderL: {
+        fontSize: 48,
+        lineHeight: 72,
+        fontWeight: 700,
+    },
+    dHeaderXL: {
+        fontSize: 64,
+        lineHeight: 96,
+        fontWeight: 700,
     },
 };
 
