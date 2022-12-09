@@ -1,8 +1,3 @@
-/// <reference types="node" />
-/// <reference types="react" />
-/// <reference types="react-dom" />
-
-/// <reference types="react-scripts" />
 import 'styled-components';
 import * as React from 'react';
 import helpers from './theme/helpers';
@@ -11,7 +6,6 @@ import typography from './theme/typography';
 import decorations from './theme/decorations';
 import breakpoints from './theme/breakpoints';
 import mixins from './theme/mixins';
-import widget from './theme/widget';
 
 declare namespace NodeJS {
     interface ProcessEnv {
@@ -86,7 +80,6 @@ declare module 'styled-components' {
         decorations: typeof decorations;
         breakpoints: typeof breakpoints;
         mixins: typeof mixins;
-        widget: typeof widget;
         helpers: typeof helpers;
     }
 }

@@ -38,6 +38,11 @@ const mixins = {
         ${end};
         justify-content: center;
     `,
+    mainGrid: css`
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+    `,
     getTypography: (typographyType: keyof TTypography) => css`
         ${({ theme }) => theme.helpers.getTypography(typographyType)}
     `,
