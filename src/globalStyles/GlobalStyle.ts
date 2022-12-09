@@ -46,8 +46,6 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     line-height: 1.25;
-    background-color: ${({ theme }) => theme.colors.white()};
-    color: ${({ theme }) => theme.colors.base()};
   }
 
   ol, ul {
